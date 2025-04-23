@@ -1,6 +1,6 @@
 /* assets/css/custom.css */
 
-/* Typography: Garamond for elegance */
+/* — Typography & colors (unchanged) — */
 body {
   font-family: 'Garamond', 'Georgia', serif;
   background-color: #fdf7f2;
@@ -9,10 +9,10 @@ body {
   font-size: 18px;
 }
 
-/* Header Bar & Navigation */
-.site-header {
-  background-color: #fdf7f2 !important; /* match the background */
-  border-bottom: 1px solid #e7dcd2;
+h1, h2, h3 {
+  font-family: 'Garamond', serif;
+  font-weight: normal;
+  color: #3b2d24;
 }
 
 a {
@@ -24,24 +24,24 @@ a:hover {
   color: #5c3920;
 }
 
-/* Headings */
-h1, h2, h3 {
-  font-family: 'Garamond', serif;
-  font-weight: normal;
-  color: #3b2d24;
+/* — Navbar background & link pills — */
+.site-header,
+.site-header .wrapper {
+  background-color: #fdf7f2 !important;
+  border-bottom: 1px solid #e5dbd2;
+  box-shadow: none;
 }
 
-/* Active nav styling */
+/* Remove the white “pill” background on each nav link */
 .site-nav .page-link {
-  color: #7a4e2d;
+  background-color: transparent !important;
+  color: #7a4e2d !important;
 }
 .site-nav .page-link:hover {
-  color: #5c3920;
+  color: #5c3920 !important;
 }
 
-/* Footer cleanup (optional) */
+/* — Hide the old default footer at build time — */
 .site-footer {
-  background-color: #fdf7f2;
-  color: #8c7564;
-  border-top: 1px solid #e7dcd2;
+  display: none !important;
 }
