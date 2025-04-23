@@ -4,6 +4,7 @@ title: "📝 Blog"
 has_children: true
 permalink: /blog/
 nav_order: 4
+hidden: true
 ---
 
 # 📝 Blog
