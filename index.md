@@ -4,10 +4,29 @@ title: "🏠 Home"
 nav_order: 1
 ---
 
-# Welcome to Shiv's Writing Portfolio
+<section class="hero">
+  <div class="hero-text">
+    <h1>Welcome to Shiv’s Writing Portfolio</h1>
+    <p>Exploring voice, story, and the space in between.</p>
+  </div>
+</section>
 
-This site is a collection of my personal essays, professional writing samples, and occasional reflections.
+<section class="intro">
+  This site is a collection of my personal essays, professional writing samples, and occasional reflections.  
+  I write to explore — stories, systems, and the space in between.
+</section>
 
-I write to explore — stories, systems, and the space in between.
-
----
+<section class="spotlight">
+  <div class="card">
+    <img src="{{ '/assets/images/essays-icon.svg' | relative_url }}" alt="Essays">
+    <h3>Essays</h3>
+  </div>
+  <div class="card">
+    <img src="{{ '/assets/images/teaching-icon.svg' | relative_url }}" alt="Teaching">
+    <h3>Teaching</h3>
+  </div>
+  <div class="card">
+    <img src="{{ '/assets/images/fiction-icon.svg' | relative_url }}" alt="Fiction">
+    <h3>Fiction</h3>
+  </div>
+</section>

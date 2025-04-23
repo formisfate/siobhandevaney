@@ -67,7 +67,16 @@ article,
     padding: 0.75rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
+}
+
+.site-logo-link {
+    display: block;
+}
+
+.site-logo {
+    height: 40px;
+    width: auto;
 }
 
 .site-title {
@@ -122,6 +131,53 @@ article,
 .main-content {
     margin-top: 72px; /* match header height */
     padding: 2rem;
+}
+
+/* ────────────────────────────────
+   Hero section
+────────────────────────────────*/
+.hero {
+    position: relative;
+    background: url('../images/hero.jpg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.hero-text {
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* ────────────────────────────────
+   Intro paragraph
+────────────────────────────────*/
+.intro {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ────────────────────────────────
+   Spotlight cards
+────────────────────────────────*/
+.spotlight {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.spotlight .card img {
+    height: 80px;
+    margin-bottom: 1rem;
 }
 
 /* ────────────────────────────────
@@ -182,5 +238,8 @@ code, pre {
     .main-content {
         margin-top: 120px;
         padding: 1.5rem;
+    }
+    .hero {
+        height: 40vh;
     }
 }
