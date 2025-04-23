@@ -1,26 +1,21 @@
 /* assets/css/custom.css */
 
 /* ────────────────────────────────────────────────────────────────────────────
-   Base Typography & Colors
+   1) Base Typography & Colors
    ──────────────────────────────────────────────────────────────────────────── */
    body {
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: 'Garamond','Georgia',serif;
     background-color: #fdf7f2;
     color: #3b2d24;
     line-height: 1.6;
     font-size: 18px;
-    margin: 0;
-    padding: 0;
   }
-  
   h1, h2, h3 {
     font-family: 'Garamond', serif;
     font-weight: normal;
+    margin: 1.5em 0 0.5em;
     color: #3b2d24;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
   }
-  
   a {
     color: #7a4e2d;
     text-decoration: none;
@@ -31,53 +26,46 @@
   }
   
   /* ────────────────────────────────────────────────────────────────────────────
-     Header & Navigation
+     2) Header & Nav — kill all white boxes and match page bg
      ──────────────────────────────────────────────────────────────────────────── */
-  /* Make every header container match the page background */
+  /* Ensure every wrapper in the header/nav is your bg color */
   .site-header,
-  .site-header .site-header-inner,
-  .site-header .site-nav-container {
+  .site-header-inner,
+  .site-header .wrapper,
+  .site-header .site-nav-container,
+  .site-nav,
+  .site-nav-wrap {
     background-color: #fdf7f2 !important;
-    border-bottom: 1px solid #e7dcd2;
-    box-shadow: none;
-  }
-  
-  /* Strip the “pill” effect from nav links */
-  .site-nav .page-link {
-    background: transparent !important;
+    border-bottom: 1px solid #e7dcd2 !important;
     box-shadow: none !important;
-    color: #7a4e2d !important;
-    padding: 0.5em 0.75em !important;
-    border-radius: 0 !important;
   }
   
-  /* Hover state for nav links */
+  /* Remove any “pill” backgrounds or extra nav containers */
+  .site-nav .page-link,
+  .navigation,
+  .site-nav-background {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+  
+  /* Nav link colors */
+  .site-nav .page-link {
+    color: #7a4e2d !important;
+    border-radius: 0 !important;
+    padding: 0.5em 0.75em !important;
+  }
   .site-nav .page-link:hover {
     color: #5c3920 !important;
   }
   
-  /* Remove any additional white nav backgrounds */
-  .navigation,
-  .site-nav-background {
-    background: transparent !important;
-  }
-  
   /* ────────────────────────────────────────────────────────────────────────────
-     Footer Overrides
+     3) Clean Slate Footer — hide everything from the original theme
      ──────────────────────────────────────────────────────────────────────────── */
-  /* Hide the built-in “Powered by” credit bar */
-  .site-info {
+  /* Hide the original feed + credits bar */
+  .feed,
+  .rss-feed,
+  .site-info,
+  .site-footer {  
     display: none !important;
-  }
-  
-  /* Style your custom footer (from _includes/footer.html) */
-  .site-footer {
-    background-color: #fdf7f2;
-    border-top: 1px solid #e7dcd2;
-    padding: 1rem 0;
-    text-align: center;
-    font-family: 'Garamond', serif;
-    color: #8c7564;
-    font-size: 0.9rem;
   }
   
