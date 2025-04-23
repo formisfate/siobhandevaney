@@ -7,21 +7,17 @@ title: "Siobhan Devaney"
 description: "Australian fiction writer and essayist exploring human behaviour"
 
 # GitHub Pages URLs
-url: "https://formisfate.github.io"   # your user-site root
-baseurl: "/siobhandevaney"            # your project slug
+url:    "https://formisfate.github.io"   # your user-site
+baseurl: "/siobhandevaney"               # your project slug
 
-# Author info
+# Author
 author:
-  name: "Siobhan Devaney"
+  name:  "Siobhan Devaney"
   email: "sdevaney24@gmail.com"
 
 # Theme & logo
 remote_theme: mmistakes/minimal-mistakes
-logo: /assets/images/android-chrome-512x512.png
-
-# Instruct Minimal Mistakes to inject your custom head include
-include_head:
-  - head-custom.html
+logo:         /assets/images/android-chrome-512x512.png
 
 # Plugins
 plugins:
@@ -31,18 +27,17 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
-# Copy these files (from your repo root) into the published site root
+# Copy these files verbatim into your published site root
 include:
   - favicon.ico
   - site.webmanifest
-  - robots.txt        # add when you have one
+  - robots.txt
 
-# Optional settings
-permalink: /:title/   # clean URLs
-markdown: kramdown
+# Optionals
+permalink: /:title/
+markdown:  kramdown
 highlighter: rouge
 
-# Exclude development files
 exclude:
   - node_modules
   - vendor
