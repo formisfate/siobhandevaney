@@ -1,36 +1,30 @@
-title: "Siobhan Devaney"
+title: "Shiv's Writing Portfolio"
 description: >
-  Australian fiction writer and essayist exploring the strange and emotional edges of human nature.
+  A collection of writing projects, essays, and reflections by Shiv.
 
 remote_theme: pmarsceill/just-the-docs
 color_scheme: light
 
 collections:
-  pages:
+  blog:
     output: true
-    directory: _pages
-    permalink: /:path/
+    directory: _blog
+    permalink: /blog/:name/
 
 just_the_docs:
   nav:
     - title: "🏠 Home"
       url: "/"
-    - title: "📝 About"
+    - title: "🪶 About"
       url: "/about/"
-    - title: "📚 Writing"
-      url: "/writing/"
+    - title: "📝 Blog"
+      url: "/blog/"
     - title: "📬 Contact"
       url: "/contact/"
 
   include_head:
-    - head_custom.html
+    - head-custom.html
 
-url: "https://formisfate.github.io"
-baseurl: "/siobhan-site"
-
-search_enabled: true
-favicon_ico: "/assets/images/favicon.ico"
-
-plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
+search_enabled: false
+url: "https://formisfate.github.io"       # Fill in if deploying
+baseurl: "/siobhandevaney"   # Fill in if deploying

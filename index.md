@@ -1,15 +1,17 @@
 ---
-layout: home
-title: "Siobhan Devaney"
-nav_exclude: true
-description: >
-  A portfolio of fiction and essays exploring the strange and emotional edges of human nature.
+layout: default
+title: "🏠 Home"
+nav_order: 1
 ---
 
-# ✍️ Siobhan Devaney
+# Welcome to Shiv's Writing Portfolio
 
-Welcome. I’m an Australian writer whose work explores the paradoxes of emotion, motherhood, memory, and human nature.
+This site is a collection of my personal essays, professional writing samples, and occasional reflections.
 
-This site collects my published writing, essays, and contact info.
+I write to explore — stories, systems, and the space in between.
 
-More coming soon.
+---
+
+🪶 [About Me](/about/)  
+📝 [Blog](/blog/)  
+📬 [Contact](/contact/)
