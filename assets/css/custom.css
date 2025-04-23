@@ -4,195 +4,204 @@
 
 /* 🌿 Color palette */
 :root {
-    --bg-cream:     #f5f0e4;
-    --text-dark:    #3a2f1f;
-    --accent-green: #8b5e3c;
-    --accent-hover: #a37153;
-    --nav-bg:       #e7dfd5;
-    --border-light: #cdc3b2;
-}
-
-/* 📕 Base typography & layout */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto+Mono&display=swap');
-
-body {
+    --bg-cream:      #f5f0e4;
+    --text-dark:     #3a2f1f;
+    --accent-green:  #8b5e3c;
+    --accent-hover:  #a37153;
+    --nav-bg:        #e7dfd5;
+    --border-light:  #cdc3b2;
+    --header-height: 72px;
+  }
+  
+  /* 📕 Base typography & layout */
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto+Mono&display=swap');
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
     margin: 0;
     padding: 0;
     font-family: 'Lora', serif;
     background-color: var(--bg-cream);
     color: var(--text-dark);
     line-height: 1.6;
-}
-
-h1, h2, h3 {
+  }
+  
+  h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-}
-
-/* ────────────────────────────────
-   Remove default sidebar + white cards
-────────────────────────────────*/
-.side-bar,
-.site-footer {
+  }
+  
+  /* ────────────────────────────────
+     Remove default sidebar + white cards
+  ──────────────────────────────── */
+  .side-bar,
+  .site-footer {
     display: none !important;
-}
-
-.main-content,
-.main-content .page__inner,
-.main,
-.page,
-.page__inner,
-.container,
-article,
-.post,
-.doc-wrapper {
+  }
+  
+  .main-content,
+  .main-content .page__inner,
+  .main,
+  .page,
+  .page__inner,
+  .container,
+  article,
+  .post,
+  .doc-wrapper {
     background: transparent !important;
     box-shadow: none !important;
     border: none !important;
     border-radius: 0 !important;
-}
-
-/* ────────────────────────────────
-   Top-Bar Header + Nav
-────────────────────────────────*/
-.site-header {
+  }
+  
+  /* ────────────────────────────────
+     Top-Bar Header + Nav
+  ──────────────────────────────── */
+  .site-header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: var(--nav-bg);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    padding: 0.75rem 2rem;
+    height: var(--header-height);
+    padding: 0 2rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
-}
-
-.site-logo-link {
+  }
+  
+  .site-logo-link {
     display: block;
-}
-
-.site-logo {
+  }
+  
+  .site-logo {
     height: 40px;
     width: auto;
-}
-
-.site-title {
+  }
+  
+  .site-title {
     margin: 0;
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-}
-
-.site-title a {
+  }
+  
+  .site-title a {
     text-decoration: none;
     color: var(--text-dark);
-}
-
-.site-nav-top ul {
+  }
+  
+  .site-nav-top ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 1.5rem;
-}
-
-.site-nav-top a {
+  }
+  
+  .site-nav-top a {
     position: relative;
     text-decoration: none;
     font-weight: 600;
     color: var(--text-dark);
     padding: 0.25rem 0;
     transition: color 0.3s ease;
-}
-
-.site-nav-top a::after {
+  }
+  
+  .site-nav-top a::after {
     content: '';
     position: absolute;
-    left: 0; bottom: -2px;
+    left: 0;
+    bottom: -2px;
     width: 0;
     height: 2px;
     background-color: var(--accent-green);
     transition: width 0.3s ease;
-}
-
-.site-nav-top a:hover {
+  }
+  
+  .site-nav-top a:hover {
     color: var(--accent-hover);
-}
-
-.site-nav-top a:hover::after {
+  }
+  
+  .site-nav-top a:hover::after {
     width: 100%;
-}
-
-/* ────────────────────────────────
-   Main content sits below header
-────────────────────────────────*/
-.main-content {
-    margin-top: 72px; /* match header height */
+  }
+  
+  /* ────────────────────────────────
+     Main content sits below header
+  ──────────────────────────────── */
+  .main-content {
+    margin-top: var(--header-height);
     padding: 2rem;
-}
-
-/* ────────────────────────────────
-   Hero section
-────────────────────────────────*/
-.hero {
-    position: relative;
+  }
+  
+  /* ────────────────────────────────
+     Hero section
+  ──────────────────────────────── */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: url('../images/android-chrome-512x512.png') center/cover no-repeat;
     height: 60vh;
-    display: flex;
-    align-items: flex-start;
-    padding-top: 4rem;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.hero-text {
-    background: rgba(255, 248, 240, 0.85); /* soft cream tone */
-    color: var(--text-dark);
-}
-
-
-/* ────────────────────────────────
-   Intro paragraph
-────────────────────────────────*/
-.intro {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .hero-heading {
+    max-width: 700px;
+    margin: 1.5rem auto 0;
+    text-align: center;
+  }
+  
+  /* ────────────────────────────────
+     Intro paragraph
+  ──────────────────────────────── */
+  .intro {
     max-width: 700px;
     margin: 0 auto 2rem;
+    text-align: center;
     font-size: 1.1rem;
     line-height: 1.8;
-}
-
-/* ────────────────────────────────
-   Spotlight cards
-────────────────────────────────*/
-.spotlight {
+  }
+  
+  /* ────────────────────────────────
+     Spotlight cards
+  ──────────────────────────────── */
+  .spotlight {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
     gap: 2rem;
     margin: 2rem 0;
     text-align: center;
-}
-
-.spotlight .card img {
+  }
+  
+  .spotlight .card img {
     height: 120px; /* was 80px */
     margin-bottom: 0;
-}
-
-
-/* ────────────────────────────────
-   Links, Buttons, Blockquotes, Code
-────────────────────────────────*/
-a {
+  }
+  
+  /* ────────────────────────────────
+     Links, Buttons, Blockquotes, Code
+  ──────────────────────────────── */
+  a {
     color: var(--accent-green);
     transition: color 0.3s ease;
-}
-
-a:hover {
+  }
+  
+  a:hover {
     color: var(--accent-hover);
-}
-
-.btn {
+  }
+  
+  .btn {
     display: inline-block;
     background-color: var(--accent-green);
     color: #fff;
@@ -200,46 +209,54 @@ a:hover {
     border-radius: 4px;
     text-decoration: none;
     transition: background-color 0.3s ease;
-}
-
-.btn:hover {
+  }
+  
+  .btn:hover {
     background-color: var(--accent-hover);
-}
-
-blockquote {
+  }
+  
+  blockquote {
     border-left: 4px solid var(--border-light);
     padding-left: 1rem;
     margin: 1.5rem 0;
-    background: rgba(0,0,0,0.02);
+    background: rgba(0, 0, 0, 0.02);
     font-style: italic;
-}
-
-code, pre {
+  }
+  
+  code,
+  pre {
     font-family: 'Roboto Mono', monospace;
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
     border-radius: 4px;
     padding: 0.2rem 0.4rem;
-}
-
-/* ────────────────────────────────
-   Responsive tweaks
-────────────────────────────────*/
-@media (max-width: 768px) {
+  }
+  
+  /* ────────────────────────────────
+     Responsive tweaks
+  ──────────────────────────────── */
+  @media (max-width: 768px) {
     .site-header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      height: auto;
     }
+  
     .site-nav-top ul {
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 0.5rem;
     }
+  
     .main-content {
-        margin-top: 120px;
-        padding: 1.5rem;
+      margin-top: calc(var(--header-height) + 1rem);
+      padding: 1.5rem;
     }
+  
     .hero {
-        height: 40vh;
+      height: 40vh;
+      padding: 1rem;
     }
-}
+  }
+  
