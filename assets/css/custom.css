@@ -1,28 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
-:root {
-  --bg: #fdf7f2;
-  --text: #3b2d24;
-  --accent: #7a4e2d;
-}
-
 body {
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: 'EB Garamond', Georgia, serif;
-  font-size: 1.05rem;
-}
-
-h1, h2, h3 {
-  color: var(--text);
   font-family: 'EB Garamond', serif;
-  font-weight: 400;
+  background: #fdf7f2;
+  color: #3b2d24;
 }
 
 a {
-  color: var(--accent);
+  color: #7a4e2d;
 }
 a:hover {
   color: #5c3920;
   text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: #3b2d24;
+  font-weight: 400;
 }
