@@ -1,69 +1,74 @@
+/* assets/css/custom.css */
+
 /* ────────────────────────────────────────────────────────────────────────────
-   assets/css/custom.css
+   1) Base Typography & Colors
    ──────────────────────────────────────────────────────────────────────────── */
-
-/* 1) Base Typography & Colors */
-body {
-  font-family: 'Garamond','Georgia',serif;
-  background-color: #fdf7f2 !important;
-  color: #3b2d24 !important;
-  line-height: 1.6;
-  font-size: 18px;
-}
-
-h1, h2, h3 {
-  font-family: 'Garamond', serif;
-  font-weight: normal;
-  margin: 1.5em 0 0.5em;
-  color: #3b2d24;
-}
-
-a {
-  color: #7a4e2d;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-  color: #5c3920;
-}
-
-/* 2) Unify Entire Page Wrapper & Main Section */
-.site-wrapper,
-.site-main,
-.site-footer {
-  background-color: #fdf7f2 !important;
-}
-
-/* 3) Header & Nav — collapse every white region into blush */
-header.site-header,
-header.site-header .wrapper,
-header.site-header-inner,
-.site-nav-container,
-.site-nav-wrap,
-#site-nav,
-#site-nav ul,
-#site-nav li {
-  background-color: #fdf7f2 !important;
-  border-bottom: 1px solid #e7dcd2 !important;
-  box-shadow: none !important;
-}
-
-/* Remove any stray pill backgrounds */
-.site-nav .page-link,
-.nav__link {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  color: #7a4e2d !important;
-  border-radius: 0 !important;
-  padding: 0.5em 0.75em !important;
-}
-.site-nav .page-link:hover,
-.nav__link:hover {
-  color: #5c3920 !important;
-}
-
-/* 4) Hide only the theme’s built-in feed & credit bars */
-div.site-info,
-footer.site-footer:not([class*="custom"]) {
-  display: none !important;
-}
+   body {
+    font-family: 'Garamond','Georgia',serif;
+    background-color: #fdf7f2 !important;
+    color: #3b2d24 !important;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  
+  h1,h2,h3 {
+    font-family: 'Garamond',serif;
+    font-weight: normal;
+    margin: 1.5em 0 0.5em;
+    color: #3b2d24;
+  }
+  
+  a {
+    color: #7a4e2d;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #5c3920;
+  }
+  
+  /* ────────────────────────────────────────────────────────────────────────────
+     2) Entire Page Wrapper & Main Section — make everything blush
+     ──────────────────────────────────────────────────────────────────────────── */
+  /* Wraps the whole page, including the grey stripe under header */
+  div.site-wrapper,
+  div.site-main,
+  main.site-main,
+  div.main-inner,
+  div.page-wrap {
+    background-color: #fdf7f2 !important;
+  }
+  
+  /* ────────────────────────────────────────────────────────────────────────────
+     3) Header & Nav — collapse every white region into blush
+     ──────────────────────────────────────────────────────────────────────────── */
+  header.site-header,
+  header.site-header-inner,
+  header .wrapper,
+  header .site-nav-container,
+  header .site-nav-wrap,
+  header nav,
+  header nav ul {
+    background-color: #fdf7f2 !important;
+    border-bottom: 1px solid #e7dcd2 !important;
+    box-shadow: none !important;
+  }
+  
+  .site-nav .page-link {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #7a4e2d !important;
+    border-radius: 0 !important;
+    padding: 0.5em 0.75em !important;
+  }
+  .site-nav .page-link:hover {
+    color: #5c3920 !important;
+  }
+  
+  /* ────────────────────────────────────────────────────────────────────────────
+     4) Footer & Credits — hide theme’s grey credit bar only
+     ──────────────────────────────────────────────────────────────────────────── */
+  div.site-info {
+    display: none !important;
+  }
+  
