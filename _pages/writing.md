@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Writing
-nav_order: 3
+title: "Writing"
+permalink: /writing/
+nav_order: 2
 ---
 
-# Writing
+# 📚 Published Work
 
-A curated list of recent work:
+- “The Sandal Tree” – _Cordite_, 2024  
+  [Read it here](#)
 
-- “Title of Story” – _Journal Name_ (2024)  
-  [Read online](#)
+- “After the Rain” – _Overland_, 2023  
+  [Read it here](#)
 
-- “Another Piece” – _Another Journal_ (2023)  
-  [Read online](#)
-
-More coming soon.
+- “Mother, Again” – _Kill Your Darlings_, 2022  
+  [Read it here](#)

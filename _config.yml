@@ -5,7 +5,23 @@ description: >
 remote_theme: pmarsceill/just-the-docs
 color_scheme: light
 
+collections:
+  pages:
+    output: true
+    directory: _pages
+    permalink: /:path/
+
 just_the_docs:
+  nav:
+    - title: "🏠 Home"
+      url: "/"
+    - title: "📝 About"
+      url: "/about/"
+    - title: "📚 Writing"
+      url: "/writing/"
+    - title: "📬 Contact"
+      url: "/contact/"
+
   include_head:
     - head-custom.html
 

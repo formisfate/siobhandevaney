@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Contact
-nav_order: 4
+title: "Contact"
+permalink: /contact/
+nav_order: 3
 ---
 
-# Contact
+# 📬 Contact
 
-Feel free to reach out via email:
+To reach out, collaborate, or request readings:
 
-📩 [sdevaney24@gmail.com](mailto:sdevaney24@gmail.com)
+**📧** [sdevaney24@gmail.com](mailto:sdevaney24@gmail.com)

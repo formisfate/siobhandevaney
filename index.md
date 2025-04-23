@@ -1,9 +1,15 @@
 ---
-layout: default
-title: Home
-nav_order: 1
+layout: home
+title: "Siobhan Devaney"
+nav_exclude: true
+description: >
+  A portfolio of fiction and essays exploring the strange and emotional edges of human nature.
 ---
 
-# Siobhan Devaney
+# ✍️ Siobhan Devaney
 
-Welcome. I’m an Australian writer exploring the strange, often contradictory nature of human behaviour through fiction and essays.
+Welcome. I’m an Australian writer whose work explores the paradoxes of emotion, motherhood, memory, and human nature.
+
+This site collects my published writing, essays, and contact info.
+
+More coming soon.

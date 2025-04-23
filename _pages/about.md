@@ -1,9 +1,10 @@
 ---
 layout: default
-title: About
-nav_order: 2
+title: "About"
+permalink: /about/
+nav_order: 1
 ---
 
-# About
+# 📝 About
 
-Siobhan Devaney is an Australian fiction writer and essayist whose work explores the strange, often contradictory nature of human behaviour.
+Siobhan Devaney is a fiction writer and essayist whose work explores the emotional edges of everyday life. Based in the Blue Mountains, she writes about motherhood, memory, and the moments that split us in two.

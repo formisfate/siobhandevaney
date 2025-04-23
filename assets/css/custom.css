@@ -2,6 +2,19 @@
 
 body {
   font-family: 'EB Garamond', serif;
-  background: #fdf7f2;
+  background-color: #fdf7f2;
   color: #3b2d24;
+}
+
+h1, h2, h3 {
+  color: #3b2d24;
+  font-weight: 400;
+}
+
+a {
+  color: #7a4e2d;
+}
+a:hover {
+  color: #5c3920;
+  text-decoration: underline;
 }
