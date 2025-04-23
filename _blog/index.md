@@ -12,7 +12,8 @@ hidden: true
 Occasional thoughts, fragments, and full-form writing experiments.
 
 {% for post in site.blog %}
-  {% unless post.name == "index" %}
+  {% unless post.name == "index" or post.hidden %}
 - [{{ post.title }}]({{ post.url | relative_url }})
   {% endunless %}
 {% endfor %}
+
