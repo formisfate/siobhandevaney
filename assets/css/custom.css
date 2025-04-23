@@ -141,7 +141,8 @@ article,
     background: url('../images/android-chrome-512x512.png') center/cover no-repeat;
     height: 60vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 4rem;
     justify-content: center;
     margin-bottom: 2rem;
 }
