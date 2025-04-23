@@ -1,0 +1,29 @@
+title: "Siobhan Devaney"
+description: "Australian fiction writer and essayist exploring the strange and emotional edges of human nature."
+
+url: "https://formisfate.github.io"
+baseurl: "/siobhandevaney"
+
+author:
+  name: "Siobhan Devaney"
+  email: "sdevaney24@gmail.com"
+
+remote_theme: mmistakes/minimal-mistakes
+
+logo: /assets/images/android-chrome-512x512.png
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+include:
+  - favicon.ico
+  - site.webmanifest
+  - robots.txt
+  - assets/css/custom.css
+
+permalink: /:title/
+markdown: kramdown
+highlighter: rouge
