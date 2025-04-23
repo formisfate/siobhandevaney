@@ -26,5 +26,8 @@ just_the_docs:
     - head-custom.html
 
 search_enabled: false
+
+favicon_ico: "/assets/images/favicon.ico"
+
 url: "https://formisfate.github.io"       # Fill in if deploying
 baseurl: "/siobhandevaney"   # Fill in if deploying
