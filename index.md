@@ -1,8 +1,9 @@
 ---
-layout: home
+layout: single
 title: "Siobhan Devaney"
-excerpt: "Fiction and essays on the paradoxes of human nature."
+excerpt: "Australian fiction writer and essayist"
 permalink: /
+classes: wide
 ---
 
-Welcome to my site. I'm an Australian writer exploring the strange, often contradictory nature of human behaviour through fiction and essays.
+Welcome. I’m an Australian writer exploring the strange, often contradictory nature of human behaviour through fiction and essays.

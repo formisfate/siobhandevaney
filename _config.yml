@@ -8,6 +8,8 @@ author:
 # GitHub Pages-compatible remote theme
 remote_theme: mmistakes/minimal-mistakes
 
+logo: /assets/images/logo.png
+
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
