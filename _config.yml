@@ -7,7 +7,7 @@ title: "Siobhan Devaney"
 description: "Australian fiction writer and essayist exploring human behaviour"
 
 # GitHub Pages URLs
-url: "https://formisfate.github.io"   # your user‐site root
+url: "https://formisfate.github.io"   # your user-site root
 baseurl: "/siobhandevaney"            # your project slug
 
 # Author info
@@ -19,7 +19,7 @@ author:
 remote_theme: mmistakes/minimal-mistakes
 logo: /assets/images/android-chrome-512x512.png
 
-# Tell Minimal Mistakes to load this include into <head>
+# Instruct Minimal Mistakes to inject your custom head include
 include_head:
   - head-custom.html
 
@@ -35,10 +35,10 @@ plugins:
 include:
   - favicon.ico
   - site.webmanifest
-  - robots.txt        # add when you create one
+  - robots.txt        # add when you have one
 
 # Optional settings
-permalink: /:title/   # clean pretty URLs
+permalink: /:title/   # clean URLs
 markdown: kramdown
 highlighter: rouge
 
