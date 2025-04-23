@@ -1,5 +1,5 @@
 /* ────────────────────────────────────────────────────────────────────────────
-   Base typography & palette
+   1) Base palette & typography (already there)
    ──────────────────────────────────────────────────────────────────────────── */
    body {
     font-family: 'Garamond','Georgia',serif;
@@ -10,35 +10,30 @@
     margin: 0;
   }
   
-  h1, h2, h3 {
-    font-family: 'Garamond', serif;
-    font-weight: normal;
-    margin: 1.5em 0 0.5em;
-    color: #3b2d24;
-  }
-  
-  a {
-    color: #7a4e2d;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-    color: #5c3920;
-  }
-  
   /* ────────────────────────────────────────────────────────────────────────────
-     Trim any leftover shadows/borders from theme
+     2) Blush canvas everywhere
      ──────────────────────────────────────────────────────────────────────────── */
   header.site-header,
-  header.site-header-inner,
-  .site-nav-container,
-  .site-nav-wrap {
-    border-bottom: 1px solid #e7dcd2;
-    box-shadow: none;
+  .site-wrapper,
+  .site-main,
+  .site-footer {
+    background-color: #fdf7f2 !important;
   }
   
   /* ────────────────────────────────────────────────────────────────────────────
-     Custom footer (live in _includes/footer.html, not here)
+     3) Clean up nav pills
      ──────────────────────────────────────────────────────────────────────────── */
-  /* (No footer CSS needed here—see next) */
+  .site-nav .page-link {
+    background: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* ────────────────────────────────────────────────────────────────────────────
+     4) Hide the theme’s feed / “Powered by” bar
+     ──────────────────────────────────────────────────────────────────────────── */
+  /* .feed is the RSS link, .site-info is the “Powered by Jekyll…” block */
+  .feed,
+  .site-info {
+    display: none !important;
+  }
   
