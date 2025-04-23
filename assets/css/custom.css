@@ -9,3 +9,8 @@ body {
 h1, h2, h3 {
   font-family: 'Roboto Mono', monospace;
 }
+
+/* === Footer Hidden === */
+.site-footer {
+    display: none !important;
+  }
