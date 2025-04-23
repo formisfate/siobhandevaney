@@ -1,39 +1,86 @@
-/* ────────────────────────────────────────────────────────────────────────────
-   1) Base palette & typography (already there)
-   ──────────────────────────────────────────────────────────────────────────── */
+/* assets/css/custom.css */
+
+/* ─────────────────────────────────────────────────────────
+   1) Import a web-safe elegant serif (you can swap in your own)
+   ───────────────────────────────────────────────────────────────── */
+   @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+
+   :root {
+     --bg: #fdf7f2;
+     --text: #3b2d24;
+     --link: #7a4e2d;
+     --link-hover: #5c3920;
+     --border: #e5dbd2;
+   }
+   
+   /* ─────────────────────────────────────────────────────────
+      2) Reset & base
+      ───────────────────────────────────────────────────────── */
+   * { box-sizing: border-box; }
    body {
-    font-family: 'Garamond','Georgia',serif;
-    background-color: #fdf7f2;
-    color: #3b2d24;
-    line-height: 1.6;
-    font-size: 18px;
-    margin: 0;
-  }
-  
-  /* ────────────────────────────────────────────────────────────────────────────
-     2) Blush canvas everywhere
-     ──────────────────────────────────────────────────────────────────────────── */
-  header.site-header,
-  .site-wrapper,
-  .site-main,
-  .site-footer {
-    background-color: #fdf7f2 !important;
-  }
-  
-  /* ────────────────────────────────────────────────────────────────────────────
-     3) Clean up nav pills
-     ──────────────────────────────────────────────────────────────────────────── */
-  .site-nav .page-link {
-    background: none !important;
-    box-shadow: none !important;
-  }
-  
-  /* ────────────────────────────────────────────────────────────────────────────
-     4) Hide the theme’s feed / “Powered by” bar
-     ──────────────────────────────────────────────────────────────────────────── */
-  /* .feed is the RSS link, .site-info is the “Powered by Jekyll…” block */
-  .feed,
-  .site-info {
-    display: none !important;
-  }
-  
+     margin: 0;
+     font-family: 'EB Garamond', Georgia, serif;
+     background: var(--bg);
+     color: var(--text);
+     line-height: 1.6;
+     font-size: 1rem;
+   }
+   
+   /* ─────────────────────────────────────────────────────────
+      3) Blush background everywhere
+      ───────────────────────────────────────────────────────── */
+   .site-wrapper,
+   .site-header .wrapper,
+   .site-header,
+   .site-main,
+   .site-footer {
+     background: var(--bg) !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────
+      4) Tidy up site-header
+      ───────────────────────────────────────────────────────── */
+   .site-header .wrapper {
+     border-bottom: 1px solid var(--border) !important;
+     box-shadow: none !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────
+      5) Nav links: no white pills
+      ───────────────────────────────────────────────────────── */
+   .site-nav .page-link {
+     background: transparent !important;
+     box-shadow: none !important;
+     color: var(--link) !important;
+   }
+   .site-nav .page-link:hover,
+   .site-nav .active .page-link {
+     color: var(--link-hover) !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────
+      6) Hide theme-powered feed/footer credit
+      ───────────────────────────────────────────────────────── */
+   .feed,
+   .site-info {
+     display: none !important;
+   }
+   
+   /* ─────────────────────────────────────────────────────────
+      7) Headings & links
+      ───────────────────────────────────────────────────────── */
+   h1, h2, h3 {
+     font-family: 'EB Garamond', serif;
+     font-weight: normal;
+     color: var(--text);
+     margin-top: 0;
+   }
+   a {
+     color: var(--link);
+     text-decoration: none;
+   }
+   a:hover {
+     color: var(--link-hover);
+     text-decoration: underline;
+   }
+   
