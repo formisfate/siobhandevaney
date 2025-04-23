@@ -7,8 +7,8 @@ title: "Siobhan Devaney"
 description: "Australian fiction writer and essayist exploring human behaviour"
 
 # GitHub Pages URLs
-url:    "https://formisfate.github.io"   # your user-site
-baseurl: "/siobhandevaney"               # your project slug
+url:    "https://formisfate.github.io"
+baseurl: "/siobhandevaney"
 
 # Author
 author:
@@ -27,17 +27,18 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
-# Copy these files verbatim into your published site root
+# Copy these root-level files into published site root
 include:
   - favicon.ico
   - site.webmanifest
   - robots.txt
 
-# Optionals
-permalink: /:title/
-markdown:  kramdown
+# URLs & Markdown
+permalink:  /:title/
+markdown:   kramdown
 highlighter: rouge
 
+# Exclude your dev files
 exclude:
   - node_modules
   - vendor
