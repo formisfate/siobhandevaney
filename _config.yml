@@ -23,7 +23,7 @@ just_the_docs:
       url: "/contact/"
 
   include_head:
-    - head-custom.html
+    - head_custom.html
 
 url: "https://formisfate.github.io"
 baseurl: "/siobhan-site"
