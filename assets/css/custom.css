@@ -1,73 +1,69 @@
 /* ────────────────────────────────────────────────────────────────────────────
-   Base Typography & Colors
+   assets/css/custom.css
    ──────────────────────────────────────────────────────────────────────────── */
-   body {
-    font-family: 'Garamond','Georgia',serif;
-    background-color: #fdf7f2;
-    color: #3b2d24;
-    line-height: 1.6;
-    font-size: 18px;
-  }
-  h1,h2,h3 {
-    font-family: 'Garamond',serif;
-    font-weight: normal;
-    margin: 1.5em 0 0.5em;
-    color: #3b2d24;
-  }
-  a {
-    color: #7a4e2d;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-    color: #5c3920;
-  }
-  
-  /* ────────────────────────────────────────────────────────────────────────────
-     Header & Nav — force every wrapper onto your blush background
-     ──────────────────────────────────────────────────────────────────────────── */
-  header,
-  header.site-header,
-  header.site-header-inner,
-  header.site-header .wrapper,
-  header .site-nav-container,
-  header .site-nav-wrapper,
-  .navigation,
-  .site-nav-wrap,
-  .site-nav-background,
-  header nav,
-  header nav ul {
-    background-color: #fdf7f2 !important;
-    border-bottom: 1px solid #e7dcd2 !important;
-    box-shadow: none !important;
-  }
-  
-  /* Remove the pill-style backgrounds */
-  .site-nav .page-link {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    color: #7a4e2d !important;
-    border-radius: 0 !important;
-    padding: 0.5em 0.75em !important;
-  }
-  .site-nav .page-link:hover {
-    color: #5c3920 !important;
-  }
-  
-  /* ────────────────────────────────────────────────────────────────────────────
-     Footer & Feed — hide all of the theme’s leftovers
-     ──────────────────────────────────────────────────────────────────────────── */
-  /* Hide the theme’s built-in footer (we’ll supply our own) */
-  footer.site-footer {
-    display: none !important;
-  }
-  /* Hide the “Powered by” credit bar */
-  div.site-info {
-    display: none !important;
-  }
-  /* Hide the RSS Feed link bar */
-  div.feed, 
-  a.rss-feed {
-    display: none !important;
-  }
-  
+
+/* 1) Base Typography & Colors */
+body {
+  font-family: 'Garamond','Georgia',serif;
+  background-color: #fdf7f2 !important;
+  color: #3b2d24 !important;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  font-family: 'Garamond', serif;
+  font-weight: normal;
+  margin: 1.5em 0 0.5em;
+  color: #3b2d24;
+}
+
+a {
+  color: #7a4e2d;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #5c3920;
+}
+
+/* 2) Unify Entire Page Wrapper & Main Section */
+.site-wrapper,
+.site-main,
+.site-footer {
+  background-color: #fdf7f2 !important;
+}
+
+/* 3) Header & Nav — collapse every white region into blush */
+header.site-header,
+header.site-header .wrapper,
+header.site-header-inner,
+.site-nav-container,
+.site-nav-wrap,
+#site-nav,
+#site-nav ul,
+#site-nav li {
+  background-color: #fdf7f2 !important;
+  border-bottom: 1px solid #e7dcd2 !important;
+  box-shadow: none !important;
+}
+
+/* Remove any stray pill backgrounds */
+.site-nav .page-link,
+.nav__link {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: #7a4e2d !important;
+  border-radius: 0 !important;
+  padding: 0.5em 0.75em !important;
+}
+.site-nav .page-link:hover,
+.nav__link:hover {
+  color: #5c3920 !important;
+}
+
+/* 4) Hide only the theme’s built-in feed & credit bars */
+div.site-info,
+footer.site-footer:not([class*="custom"]) {
+  display: none !important;
+}
