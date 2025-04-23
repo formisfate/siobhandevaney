@@ -1,30 +1,29 @@
 # ─────────────────────────────────────────────────────────────────────────────
-# Site settings
+# _config.yml
 # ─────────────────────────────────────────────────────────────────────────────
+
+# Site settings
 title: "Siobhan Devaney"
 description: "Australian fiction writer and essayist exploring human behaviour"
 
-# must point to your GitHub Pages *user* domain...
-url: "https://formisfate.github.io"
-# ...and baseurl to your *project* slug
-baseurl: "/siobhandevaney"
+# GitHub Pages URLs
+url: "https://formisfate.github.io"   # your user‐site root
+baseurl: "/siobhandevaney"            # your project slug
 
-# ─────────────────────────────────────────────────────────────────────────────
 # Author info
-# ─────────────────────────────────────────────────────────────────────────────
 author:
   name: "Siobhan Devaney"
   email: "sdevaney24@gmail.com"
 
-# ─────────────────────────────────────────────────────────────────────────────
 # Theme & logo
-# ─────────────────────────────────────────────────────────────────────────────
 remote_theme: mmistakes/minimal-mistakes
 logo: /assets/images/android-chrome-512x512.png
 
-# ─────────────────────────────────────────────────────────────────────────────
+# Tell Minimal Mistakes to load this include into <head>
+include_head:
+  - head-custom.html
+
 # Plugins
-# ─────────────────────────────────────────────────────────────────────────────
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
@@ -32,17 +31,20 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Copy these root-level files verbatim into the published site
-# ─────────────────────────────────────────────────────────────────────────────
+# Copy these files (from your repo root) into the published site root
 include:
   - favicon.ico
-  - robots.txt        # if/when you add one
   - site.webmanifest
+  - robots.txt        # add when you create one
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Optional: pretty permalinks, defaults, etc.
-# ─────────────────────────────────────────────────────────────────────────────
-permalink: /:title/
+# Optional settings
+permalink: /:title/   # clean pretty URLs
 markdown: kramdown
 highlighter: rouge
+
+# Exclude development files
+exclude:
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
