@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
+<!-- Favicons (project‐root favicon and touch icons) -->
+<link rel="icon"          href="{{ '/favicon.ico'           | relative_url }}" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180"
+      href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32"
+      href="{{ '/assets/images/favicon-32x32.png'   | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16"
+      href="{{ '/assets/images/favicon-16x16.png'   | relative_url }}">
+<link rel="manifest"      href="{{ '/site.webmanifest'      | relative_url }}">
+
+<style>
+  /* 1) One continuous blush canvas */
+  header.site-header,
+  .site-wrapper,
+  .site-main,
+  .site-footer {
+    background-color: #fdf7f2 !important;
+  }
+
+  /* 2) Kill the nav pills */
+  .site-nav .page-link {
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  /* 3) Hide the theme’s credit/feed bar */
+  .site-info,
+  .feed,
+  a.rss-feed {
+    display: none !important;
+  }
+</style>
