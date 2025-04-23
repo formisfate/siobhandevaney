@@ -1,7 +1,6 @@
 ---
-layout: default
 title: "First Entry"
-parent: "📝 Blog"
+layout: default
 ---
 
 This is my first blog post — just testing the system.

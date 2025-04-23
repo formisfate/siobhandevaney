@@ -9,3 +9,7 @@ nav_order: 4
 # 📝 Blog
 
 Occasional thoughts, fragments, and full-form writing experiments.
+
+{% for post in site.blog %}
+- [{{ post.title }}]({{ post.url | relative_url }})
+{% endfor %}
