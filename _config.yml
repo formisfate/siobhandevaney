@@ -8,7 +8,7 @@ author:
 # GitHub Pages-compatible remote theme
 remote_theme: mmistakes/minimal-mistakes
 
-logo: /assets/images/logo.png
+logo: /assets/images/android-chrome-512x512
 
 plugins:
   - jekyll-remote-theme
