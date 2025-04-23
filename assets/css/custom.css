@@ -1,5 +1,5 @@
 /* ────────────────────────────────────────────────────────────────────────────
-   1) Base Typography & Colors
+   Base Typography & Colors
    ──────────────────────────────────────────────────────────────────────────── */
    body {
     font-family: 'Garamond','Georgia',serif;
@@ -9,7 +9,7 @@
     font-size: 18px;
   }
   h1,h2,h3 {
-    font-family: 'Garamond', serif;
+    font-family: 'Garamond',serif;
     font-weight: normal;
     margin: 1.5em 0 0.5em;
     color: #3b2d24;
@@ -24,26 +24,28 @@
   }
   
   /* ────────────────────────────────────────────────────────────────────────────
-     2) Header & Nav — collapse every white region into your blush bg
+     Header & Nav — force every wrapper onto your blush background
      ──────────────────────────────────────────────────────────────────────────── */
+  header,
   header.site-header,
-  header.site-header .wrapper,
   header.site-header-inner,
-  header.site-header .site-nav-container,
-  header.site-header nav,
-  header.site-header nav ul {
+  header.site-header .wrapper,
+  header .site-nav-container,
+  header .site-nav-wrapper,
+  .navigation,
+  .site-nav-wrap,
+  .site-nav-background,
+  header nav,
+  header nav ul {
     background-color: #fdf7f2 !important;
     border-bottom: 1px solid #e7dcd2 !important;
     box-shadow: none !important;
   }
-  .site-nav-background,
-  .site-nav-wrap,
-  .navigation,
+  
+  /* Remove the pill-style backgrounds */
   .site-nav .page-link {
     background-color: transparent !important;
     box-shadow: none !important;
-  }
-  .site-nav .page-link {
     color: #7a4e2d !important;
     border-radius: 0 !important;
     padding: 0.5em 0.75em !important;
@@ -53,9 +55,19 @@
   }
   
   /* ────────────────────────────────────────────────────────────────────────────
-     3) Hide ONLY the “Powered by” bar — do *not* hide .site-footer
+     Footer & Feed — hide all of the theme’s leftovers
      ──────────────────────────────────────────────────────────────────────────── */
-  .site-info {
+  /* Hide the theme’s built-in footer (we’ll supply our own) */
+  footer.site-footer {
+    display: none !important;
+  }
+  /* Hide the “Powered by” credit bar */
+  div.site-info {
+    display: none !important;
+  }
+  /* Hide the RSS Feed link bar */
+  div.feed, 
+  a.rss-feed {
     display: none !important;
   }
   
