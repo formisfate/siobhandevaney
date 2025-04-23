@@ -11,7 +11,3 @@ This site is a collection of my personal essays, professional writing samples, a
 I write to explore — stories, systems, and the space in between.
 
 ---
-
-🪶 [About Me](/about/)  
-📝 [Blog](/blog/)  
-📬 [Contact](/contact/)
