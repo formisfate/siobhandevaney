@@ -4,10 +4,12 @@ url: "https://siobhandevaney.github.io"
 author:
   name: "Siobhan Devaney"
   email: "sdevaney24@gmail.com"
-  twitter: ""
-theme: "minimal-mistakes-jekyll"
+
+# GitHub Pages-compatible remote theme
+remote_theme: mmistakes/minimal-mistakes
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
