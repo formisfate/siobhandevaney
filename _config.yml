@@ -1,19 +1,30 @@
+# ─────────────────────────────────────────────────────────────────────────────
 # Site settings
+# ─────────────────────────────────────────────────────────────────────────────
 title: "Siobhan Devaney"
 description: "Australian fiction writer and essayist exploring human behaviour"
-url: "https://formisfate.github.io"     # your GitHub user/site root
-baseurl: "/siobhandevaney"              # project-site subpath (blank for user-site)
 
+# must point to your GitHub Pages *user* domain...
+url: "https://formisfate.github.io"
+# ...and baseurl to your *project* slug
+baseurl: "/siobhandevaney"
+
+# ─────────────────────────────────────────────────────────────────────────────
 # Author info
+# ─────────────────────────────────────────────────────────────────────────────
 author:
   name: "Siobhan Devaney"
   email: "sdevaney24@gmail.com"
 
-# Theme
+# ─────────────────────────────────────────────────────────────────────────────
+# Theme & logo
+# ─────────────────────────────────────────────────────────────────────────────
 remote_theme: mmistakes/minimal-mistakes
 logo: /assets/images/android-chrome-512x512.png
 
+# ─────────────────────────────────────────────────────────────────────────────
 # Plugins
+# ─────────────────────────────────────────────────────────────────────────────
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
@@ -21,39 +32,17 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
-# Ensure these files are copied to site root
+# ─────────────────────────────────────────────────────────────────────────────
+# Copy these root-level files verbatim into the published site
+# ─────────────────────────────────────────────────────────────────────────────
 include:
   - favicon.ico
-  - robots.txt      # add if/when you create it
+  - robots.txt        # if/when you add one
   - site.webmanifest
 
-# Permalinks (optional future tweak)
-permalink: /:title/                       # clean URLs
-
-# Defaults (add as you grow)
-defaults:
-  - scope:
-      path: ""                            # all files
-      type: "posts"
-    values:
-      layout: "single"
-      author: "Siobhan Devaney"
-
-# Build settings
+# ─────────────────────────────────────────────────────────────────────────────
+# Optional: pretty permalinks, defaults, etc.
+# ─────────────────────────────────────────────────────────────────────────────
+permalink: /:title/
 markdown: kramdown
 highlighter: rouge
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-
-# Future collections (example)
-# collections:
-#   writing:
-#     output: true
-#     permalink: /writing/:path/
-
-# Future Sass/SCSS settings
-sass:
-  style: compressed
