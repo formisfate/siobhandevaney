@@ -10,14 +10,12 @@
     line-height: 1.6;
     font-size: 18px;
   }
-  
   h1,h2,h3 {
-    font-family: 'Garamond',serif;
+    font-family: 'Garamond', serif;
     font-weight: normal;
     margin: 1.5em 0 0.5em;
     color: #3b2d24;
   }
-  
   a {
     color: #7a4e2d;
     text-decoration: none;
@@ -28,35 +26,32 @@
   }
   
   /* ────────────────────────────────────────────────────────────────────────────
-     2) Entire Page Wrapper & Main Section — make everything blush
+     2) Full-page Canvas — everything gets your blush color
      ──────────────────────────────────────────────────────────────────────────── */
-  /* Wraps the whole page, including the grey stripe under header */
-  div.site-wrapper,
-  div.site-main,
-  main.site-main,
-  div.main-inner,
-  div.page-wrap {
+  .site-wrapper,
+  .site-main,
+  .page-wrap,
+  .site-content,
+  .site-footer {
     background-color: #fdf7f2 !important;
   }
   
   /* ────────────────────────────────────────────────────────────────────────────
-     3) Header & Nav — collapse every white region into blush
+     3) Header & Nav — smash any white backdrops
      ──────────────────────────────────────────────────────────────────────────── */
   header.site-header,
   header.site-header-inner,
-  header .wrapper,
-  header .site-nav-container,
-  header .site-nav-wrap,
-  header nav,
-  header nav ul {
+  header.site-header .wrapper,
+  .site-nav-container,
+  .site-nav-wrap,
+  nav.site-nav,
+  nav.site-nav ul {
     background-color: #fdf7f2 !important;
     border-bottom: 1px solid #e7dcd2 !important;
     box-shadow: none !important;
   }
-  
   .site-nav .page-link {
-    background-color: transparent !important;
-    box-shadow: none !important;
+    background: none !important;
     color: #7a4e2d !important;
     border-radius: 0 !important;
     padding: 0.5em 0.75em !important;
@@ -66,9 +61,11 @@
   }
   
   /* ────────────────────────────────────────────────────────────────────────────
-     4) Footer & Credits — hide theme’s grey credit bar only
+     4) Remove theme feed & credit bars
      ──────────────────────────────────────────────────────────────────────────── */
-  div.site-info {
+  div.site-info,
+  div.feed,
+  a.rss-feed {
     display: none !important;
   }
   
