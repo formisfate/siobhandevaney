@@ -1,16 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Roboto+Mono&display=swap');
+/*──────────────────────────────────────────────────────────
+  Earthy, dynamic custom.css for Shiv’s Writing Portfolio
+──────────────────────────────────────────────────────────*/
 
-body {
-  font-family: 'Space Grotesk', sans-serif;
-  background-color: #fffdf9;
-  color: #222;
-}
-
-h1, h2, h3 {
-  font-family: 'Roboto Mono', monospace;
-}
-
-/* === Footer Hidden === */
-.site-footer {
+/* 🌿 Color palette */
+:root {
+    --bg-cream:    #f5f0e4;
+    --text-dark:   #3a2f1f;
+    --accent-green:#8b5e3c;
+    --accent-hover:#a37153;
+    --nav-bg:       #e7dfd5;
+    --border-light:#cdc3b2;
+  }
+  
+  /* 📕 Base typography & layout */
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Roboto+Mono&display=swap');
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* 📑 Hide the default sidebar nav */
+  .side-bar {
     display: none !important;
   }
+  
+  /* ────────────────────────────────
+     Top-bar header + nav
+  ────────────────────────────────*/
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--nav-bg);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .site-header .site-title {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+  }
+  
+  .site-header nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .site-header nav a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    padding: 0.25rem 0;
+    transition: color 0.3s ease;
+  }
+  
+  .site-header nav a::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-green);
+    transition: width 0.3s ease;
+  }
+  
+  .site-header nav a:hover {
+    color: var(--accent-hover);
+  }
+  
+  .site-header nav a:hover::after {
+    width: 100%;
+  }
+  
+  /* Ensure content sits below header */
+  .main-content {
+    margin-top: 80px; /* adjust if header height changes */
+    padding: 2rem;
+  }
+  
+  /* ────────────────────────────────
+     Links & buttons
+  ────────────────────────────────*/
+  a {
+    color: var(--accent-green);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--accent-hover);
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: var(--accent-green);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--accent-hover);
+  }
+  
+  /* ────────────────────────────────
+     Blockquotes & code
+  ────────────────────────────────*/
+  blockquote {
+    border-left: 4px solid var(--border-light);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    background: rgba(0,0,0,0.02);
+    font-style: italic;
+  }
+  
+  code, pre {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+  }
+  
+  /* ────────────────────────────────
+     Footer hidden (as before)
+  ────────────────────────────────*/
+  .site-footer {
+    display: none !important;
+  }
+  
+  /* ────────────────────────────────
+     Responsive tweaks
+  ────────────────────────────────*/
+  @media (max-width: 768px) {
+    .site-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .site-header nav {
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .main-content {
+      margin-top: 120px;
+      padding: 1.5rem;
+    }
+  }
+  
