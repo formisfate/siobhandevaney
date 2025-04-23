@@ -9,6 +9,5 @@ nav_order: 3
 
 Want to get in touch?
 
-- 📧 **Email:** [shiv@example.com](mailto:shiv@example.com)  
-- 🐦 **Twitter:** [@shivwrites](https://x.com/shivwrites)  
-- 💼 **LinkedIn:** [shiv-writer](https://linkedin.com/in/shiv-writer)
+- 📧 **Email:** [sdevaney24@gmail.com](mailto:sdevaney24@gmail.com)  
+📘 **Facebook:** [Siobhan Devaney](https://www.facebook.com/siobhan.devaney)

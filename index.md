@@ -7,13 +7,13 @@ nav_order: 1
 <section class="hero"></section>
 
 <section class="hero-heading" style="text-align:center; margin-top: 2rem;">
-  <h1>Welcome to Shiv’s Writing Portfolio</h1>
-  <p>Exploring voice, story, and the space in between.</p>
+  <h1>Siobhan Devaney</h1>
+  <p><p>Stories that explore the emotional and paradoxical nature of being human.</p>
+</p>
 </section>
 
 <section class="intro">
-  This site is a collection of my personal essays, professional writing samples, and occasional reflections.  
-  I write to explore — stories, systems, and the space in between.
+  This site gathers my essays, fiction, and reflections — all written in pursuit of voice, tension, and truth.
 </section>
 
 <section class="spotlight">

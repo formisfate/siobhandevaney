@@ -7,9 +7,6 @@ nav_order: 2
 
 # 🪶 About Me
 
-Hi, I’m Shiv. I’m a writer, editor, and creative teacher based in the Blue Mountains.
+Hi, I’m Siobhan Devaney — an Australian fiction writer and essayist. My work explores the strange and paradoxical nature of human behaviour.
 
-My background spans literary fiction, education, and digital content.  
-I believe in the power of clear, evocative language — and I use it to help others find their voice.
-
-This site holds fragments of that work: essays, reflections, and things still taking shape.
+I’m also an editor and English teacher based in the Blue Mountains, where I live with my family.
