@@ -11,5 +11,7 @@ nav_order: 4
 Occasional thoughts, fragments, and full-form writing experiments.
 
 {% for post in site.blog %}
+  {% unless post.name == "index.md" %}
 - [{{ post.title }}]({{ post.url | relative_url }})
+  {% endunless %}
 {% endfor %}
