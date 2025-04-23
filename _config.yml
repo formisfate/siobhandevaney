@@ -1,17 +1,17 @@
 title: "Siobhan Devaney"
 description: "Australian fiction writer and essayist exploring the strange and emotional edges of human nature."
 
-# GitHub Pages settings
-theme: just-the-docs
 url: "https://formisfate.github.io"
 baseurl: "/siobhan-site"
 
-# Enable custom CSS
+remote_theme: just-the-docs/just-the-docs
+
 just_the_docs:
   aux_links: {}
   logo: "/assets/images/android-chrome-512x512.png"
   favicon_ico: "/assets/images/favicon.ico"
   include_head: _includes/head.html
+
 
 # SEO + output
 permalink: pretty
