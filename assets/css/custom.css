@@ -1,0 +1,9 @@
+/* Custom styling overrides */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f9f5f0;
+  color: #2c2c2c;
+}
+a {
+  color: #8b5e3c;
+}

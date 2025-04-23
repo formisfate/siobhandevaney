@@ -1,0 +1,14 @@
+title: "Siobhan Devaney"
+description: "Australian fiction writer and essayist exploring human behaviour"
+url: "https://siobhandevaney.github.io"
+author:
+  name: "Siobhan Devaney"
+  email: "sdevaney24@gmail.com"
+  twitter: ""
+theme: "minimal-mistakes-jekyll"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-cache
