@@ -1,15 +1,19 @@
+# Site settings
 title: "Siobhan Devaney"
 description: "Australian fiction writer and essayist exploring human behaviour"
-url: "https://siobhandevaney.github.io"
+url: "https://formisfate.github.io"     # your GitHub user/site root
+baseurl: "/siobhandevaney"              # project-site subpath (blank for user-site)
+
+# Author info
 author:
   name: "Siobhan Devaney"
   email: "sdevaney24@gmail.com"
 
-# GitHub Pages-compatible remote theme
+# Theme
 remote_theme: mmistakes/minimal-mistakes
-
 logo: /assets/images/android-chrome-512x512.png
 
+# Plugins
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
@@ -17,5 +21,39 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
-include: 
+# Ensure these files are copied to site root
+include:
   - favicon.ico
+  - robots.txt      # add if/when you create it
+  - site.webmanifest
+
+# Permalinks (optional future tweak)
+permalink: /:title/                       # clean URLs
+
+# Defaults (add as you grow)
+defaults:
+  - scope:
+      path: ""                            # all files
+      type: "posts"
+    values:
+      layout: "single"
+      author: "Siobhan Devaney"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Future collections (example)
+# collections:
+#   writing:
+#     output: true
+#     permalink: /writing/:path/
+
+# Future Sass/SCSS settings
+sass:
+  style: compressed
