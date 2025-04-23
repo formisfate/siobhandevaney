@@ -18,15 +18,15 @@ nav_order: 1
 
 <section class="spotlight">
   <div class="card">
-    <img src="{{ '/assets/images/essays-icon.svg' | relative_url }}" alt="Essays">
+    <img src="{{ '/assets/images/essays-icon.png' | relative_url }}" alt="Essays">
     <h3>Essays</h3>
   </div>
   <div class="card">
-    <img src="{{ '/assets/images/teaching-icon.svg' | relative_url }}" alt="Teaching">
+    <img src="{{ '/assets/images/teaching-icon.png' | relative_url }}" alt="Teaching">
     <h3>Teaching</h3>
   </div>
   <div class="card">
-    <img src="{{ '/assets/images/fiction-icon.svg' | relative_url }}" alt="Fiction">
+    <img src="{{ '/assets/images/fiction-icon.png' | relative_url }}" alt="Fiction">
     <h3>Fiction</h3>
   </div>
 </section>
