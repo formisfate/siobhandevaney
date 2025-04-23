@@ -1,70 +1,83 @@
+/* assets/css/custom.css */
+
 /* ────────────────────────────────────────────────────────────────────────────
-   assets/css/custom.css
+   Base Typography & Colors
    ──────────────────────────────────────────────────────────────────────────── */
-
-/* — Typography & Colors (keep from before) — */
-body {
-  font-family: 'Garamond','Georgia',serif;
-  background-color: #fdf7f2;
-  color: #3b2d24;
-  line-height: 1.6;
-  font-size: 18px;
-}
-h1,h2,h3 {
-  font-family: 'Garamond',serif;
-  font-weight: normal;
-  color: #3b2d24;
-}
-a {
-  color: #7a4e2d;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-  color: #5c3920;
-}
-
-/* — Navbar: match your page background, remove white region — */
-.site-header,
-.site-header .wrapper,
-.site-header .site-nav-container,
-.site-header-inner {
-  background-color: #fdf7f2 !important;
-  border-bottom: 1px solid #e5dbd2;
-  box-shadow: none;
-}
-/* nav “pills” transparent */
-.site-nav .page-link {
-  background-color: transparent !important;
-  color: #7a4e2d !important;
-  border-radius: 0;
-  padding: 0.5em 0.75em !important;
-}
-.site-nav .page-link:hover {
-  color: #5c3920 !important;
-}
-
-/* — Footer: your custom one — */
-.site-footer {
-  background-color: #fdf7f2;
-  border-top: 1px solid #e7dcd2;
-  padding: 1rem 0;
-  text-align: center;
-  font-family: 'Garamond',serif;
-  color: #8c7564;
-  font-size: 0.9rem;
-}
-
-/* — Bottom credit bar ("Powered by …") — */
-/* either hide it completely: */
-.site-info {
-  display: none !important;
-}
-/* or recolor to match page: */
-/*
-.site-info {
-  background-color: #fdf7f2 !important;
-  color: #8c7564 !important;
-  border-top: 1px solid #e7dcd2;
-}
-*/
+   body {
+    font-family: 'Garamond', 'Georgia', serif;
+    background-color: #fdf7f2;
+    color: #3b2d24;
+    line-height: 1.6;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Garamond', serif;
+    font-weight: normal;
+    color: #3b2d24;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  a {
+    color: #7a4e2d;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #5c3920;
+  }
+  
+  /* ────────────────────────────────────────────────────────────────────────────
+     Header & Navigation
+     ──────────────────────────────────────────────────────────────────────────── */
+  /* Make every header container match the page background */
+  .site-header,
+  .site-header .site-header-inner,
+  .site-header .site-nav-container {
+    background-color: #fdf7f2 !important;
+    border-bottom: 1px solid #e7dcd2;
+    box-shadow: none;
+  }
+  
+  /* Strip the “pill” effect from nav links */
+  .site-nav .page-link {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #7a4e2d !important;
+    padding: 0.5em 0.75em !important;
+    border-radius: 0 !important;
+  }
+  
+  /* Hover state for nav links */
+  .site-nav .page-link:hover {
+    color: #5c3920 !important;
+  }
+  
+  /* Remove any additional white nav backgrounds */
+  .navigation,
+  .site-nav-background {
+    background: transparent !important;
+  }
+  
+  /* ────────────────────────────────────────────────────────────────────────────
+     Footer Overrides
+     ──────────────────────────────────────────────────────────────────────────── */
+  /* Hide the built-in “Powered by” credit bar */
+  .site-info {
+    display: none !important;
+  }
+  
+  /* Style your custom footer (from _includes/footer.html) */
+  .site-footer {
+    background-color: #fdf7f2;
+    border-top: 1px solid #e7dcd2;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: 'Garamond', serif;
+    color: #8c7564;
+    font-size: 0.9rem;
+  }
+  
