@@ -1,12 +1,26 @@
-/* assets/css/custom.css */
-
 /* ────────────────────────────────────────────────────────────────────────────
-   1) Base Typography & Colors
+   1) Override MM’s color variables so your “blush” is universal
    ──────────────────────────────────────────────────────────────────────────── */
-   body {
+   :root {
+    /* your page background */
+    --color-bg:            #fdf7f2 !important;
+    /* header/nav container */
+    --color-header-bg:     #fdf7f2 !important;
+    /* pill hover bg (we'll make it transparent below) */
+    --color-invert:        #fdf7f2 !important;
+    /* footer area */
+    --color-footer-bg:     #fdf7f2 !important;
+    /* text color */
+    --color-text:          #3b2d24 !important;
+  }
+  
+  /* ────────────────────────────────────────────────────────────────────────────
+     2) Base typography
+     ──────────────────────────────────────────────────────────────────────────── */
+  body {
     font-family: 'Garamond','Georgia',serif;
-    background-color: #fdf7f2 !important;
-    color: #3b2d24 !important;
+    background-color: var(--color-bg);
+    color: var(--color-text);
     line-height: 1.6;
     font-size: 18px;
   }
@@ -14,7 +28,7 @@
     font-family: 'Garamond', serif;
     font-weight: normal;
     margin: 1.5em 0 0.5em;
-    color: #3b2d24;
+    color: var(--color-text);
   }
   a {
     color: #7a4e2d;
@@ -26,32 +40,24 @@
   }
   
   /* ────────────────────────────────────────────────────────────────────────────
-     2) Full-page Canvas — everything gets your blush color
+     3) Header & Nav — collapse every white block into your blush
      ──────────────────────────────────────────────────────────────────────────── */
-  .site-wrapper,
-  .site-main,
-  .page-wrap,
-  .site-content,
-  .site-footer {
-    background-color: #fdf7f2 !important;
-  }
-  
-  /* ────────────────────────────────────────────────────────────────────────────
-     3) Header & Nav — smash any white backdrops
-     ──────────────────────────────────────────────────────────────────────────── */
+  /* Main header wrapper */
   header.site-header,
   header.site-header-inner,
-  header.site-header .wrapper,
   .site-nav-container,
   .site-nav-wrap,
   nav.site-nav,
   nav.site-nav ul {
-    background-color: #fdf7f2 !important;
+    background-color: var(--color-header-bg) !important;
     border-bottom: 1px solid #e7dcd2 !important;
     box-shadow: none !important;
   }
+  
+  /* Remove the pill backgrounds behind links */
   .site-nav .page-link {
-    background: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
     color: #7a4e2d !important;
     border-radius: 0 !important;
     padding: 0.5em 0.75em !important;
@@ -61,7 +67,18 @@
   }
   
   /* ────────────────────────────────────────────────────────────────────────────
-     4) Remove theme feed & credit bars
+     4) Full‐page canvas — unify any lingering grey stripes
+     ──────────────────────────────────────────────────────────────────────────── */
+  .site-wrapper,
+  .site-main,
+  .page-wrap,
+  .main-inner,
+  .site-content {
+    background-color: var(--color-bg) !important;
+  }
+  
+  /* ────────────────────────────────────────────────────────────────────────────
+     5) Remove only the theme’s built-in credit/feed bars
      ──────────────────────────────────────────────────────────────────────────── */
   div.site-info,
   div.feed,
